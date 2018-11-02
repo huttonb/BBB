@@ -10,7 +10,12 @@ class AppWindow(QMainWindow):
         self.show()
 
 
+    def main_text_replace(self, string):
+        self.ui.textEdit.setText(string)
+
+
 app = QApplication(sys.argv)
 w = AppWindow()
 w.show()
+w.main_text_replace("Hello...")
 sys.exit(app.exec_())
