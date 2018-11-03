@@ -1,0 +1,30 @@
+This file contains key words that are used in the pseudo-language that have meaning.
+
+
+Programming-esque:
+
+WHILE() -Parser checks condition within parens, if it is true it loops within while statement
+
+IF()    -Parser checks condition within parens, if it is true it continues on, it continues into if statement
+
+INT     - Parser checks string after INT, if it's not a keyword convert it into a register holding variable type int.
+
+OPERATIONS:
+Self explanatory mathematical equations.
+
+=
+
+*
+
+/
+
++
+
+-
+
+
+
+Acceessing an object:
+
+object.value()
+
