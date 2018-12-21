@@ -1,4 +1,5 @@
-class lanParser():
+""" Language parser for the pseudo-language"""
+class LanParser():
     def __init__(self, spell):
         sad = False
     # The lexer works by giving it a set of code, it can use regex to determine whether or not it's a key-word
