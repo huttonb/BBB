@@ -13,9 +13,10 @@ class Game():
         def start_game(self):
             wizard_one_spell = self.choose_spell(self.wizard_one)
             wizard_two_spell = self.choose_spell(self.wizard_two)
-            if wizard_one_spell.get_cast_time() > wizard_two_spell.get_cast_time():
+            if wizard_one_spell.get_cast_time(wizard_one_spell) > wizard_two_spell.get_cast_time(wizard_two_spell):
                 pass
-            elif wizard_one_spell.get_cast_time() < wizard_two_spell.get_cast_time():
+            elif wizard_one_spell.get_cast_time(wizard_one_spell) < wizard_two_spell.get_cast_time(wizard_two_spell):
+
 
 
         def cast_spell(self, wizard, spell):
@@ -26,5 +27,5 @@ class Game():
         """ This is a temporary function for testing. Eventually choose spell will be comprised of
         the players choice of spell, and the AI's choice."""
         def choose_spell(self, wizard):
-            spell = FireBolt
+            spell = FireBolt() #todo figure out how bolt is being instantiated
             return spell

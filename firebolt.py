@@ -6,3 +6,6 @@ class FireBolt(bolt.Bolt):
     def effect(target):
         target.health(-1)
         target.setaflame = True
+
+    def get_cast_time(self):
+        return self.casting_time
