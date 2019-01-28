@@ -5,4 +5,3 @@ class Wizard():
         self.health = 100
         self.armor = 100
         self.mana_orbs = 1
-        

@@ -9,7 +9,7 @@ class Bolt(spell.Spell):
         self.magic_potential = 1
         self.type = "null"
         self.force = 0
-
+        self.target = None # TODO: Add the ability to target other objects
         self.field = None # TODO: Create a field object
 
     """ calculates damage based off of magic potential, force, and type"""
